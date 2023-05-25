@@ -1,9 +1,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  /* Lexend-50&Zilla-30 # Outfit&Spline Sans */
   theme: {
     fontFamily: {
-      primary: "Orbitron",
-      secondary: "Rajdhani",
+      primary: "Outfit",
+      secondary: "Spline Sans",
       tertiary: "Aldrich",
     },
     container: {

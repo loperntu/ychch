@@ -14,27 +14,27 @@ const Banner = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* text */}
-          <div className="flex-1 text-center font-secondary lg:text-left">
+          <div className="flex-1 text-center font-primary lg:text-left">
             {/* 名字 */}
             <motion.h1
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              animate={{ opacity: 1 }}
-              className="text-[52px] font-bold leading-[0.8] lg:text-[110px]"
-            >
-              UNA <span>CHEN</span>
-            </motion.h1>
-
-            {/* 打字機特效 I am a ... */}
-            <motion.div
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               animate={{ opacity: 1 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="text-[52px] font-bold leading-[1] lg:text-[110px] uppercase "
+            >
+              Pin-Er <span>Chen</span>
+            </motion.h1>
+
+            {/* 打字機特效 I am a ... */}
+            <motion.div
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              animate={{ opacity: 1 }}
+              className="ml-0.5 mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]"
             >
               <span className="mr-4 text-white">I am a</span>
               <TypeAnimation
@@ -46,9 +46,9 @@ const Banner = () => {
               />
             </motion.div>
 
-            {/* 自我介紹 */}
+            {/* 一句自我介紹 */}
             <motion.p
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -61,7 +61,7 @@ const Banner = () => {
 
             {/* 三個按鈕連結 */}
             <motion.div
-              variants={fadeIn("up", 0.5)}
+              variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -77,12 +77,12 @@ const Banner = () => {
               >
                 Contact me
               </button>
-              <a
+              {/*<a
                 href="https://github.com/cckk2913"
-                className="text-gradient btn-link"
+                c lassName="text-gradient btn-link"
               >
                 My Portfolio
-              </a>
+              </a> */}
               {/* social icons */}
               <motion.div
                 variants={fadeIn("up", 0.7)}

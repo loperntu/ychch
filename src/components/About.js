@@ -32,37 +32,36 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">
-              A learner who gets along with linguistics and NLP.
+              A learner in computational linguistics.
             </h3>
-            <p className="mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p className="mb-6 tracking-wider">
+              I am a PhD student in the Graduate Institute of Linguistics at
+              National Taiwan University. As a member of the Lab of Ontologies,
+              Language Processing and E-humanities (LOPE)
             </p>
             {/*  stats  一列有 3 columns */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient my-2">
+                <div className="text-[40px] font-tertiary text-gradient my-2 pt-2">
                   {inView ? <CountUp start={0} end={12} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-secondary text-sm tracking-[2px]">
                   Projects <br /> Completed
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient my-2">
+                <div className="text-[40px] font-tertiary text-gradient my-2 pt-2">
                   {inView ? <CountUp start={0} end={9} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-secondary text-sm tracking-[2px]">
                   Projects <br /> Completed
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient my-2">
+                <div className="text-[40px] font-tertiary text-gradient my-2 pt-2">
                   {inView ? <CountUp start={0} end={6} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-secondary text-sm tracking-[2px]">
                   Projects <br /> Completed
                 </div>
               </div>
