@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 lg:section">
+    <section id="contact" className="py-16 lg:section lg:my-60 lg:pb-80">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
@@ -17,7 +17,7 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div>
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide ">
+              <h4 className="text-xl uppercase text-carat-pink font-medium mb-2 tracking-wide ">
                 Get in touch
               </h4>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">

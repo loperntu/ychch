@@ -27,8 +27,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="section">
-      <div className="container mx-auto">
+    <section id="services" className="section lg:mb-[40vh] lg:pb-[40vh]">
+      <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row ">
           {/* text & image */}
           <motion.div
@@ -39,7 +39,7 @@ const Services = () => {
             animate={{ opacity: 1 }}
             className="flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 max-w-[455px]"
           >
-            <h2 className="h2 text-accent mb-6 leading-tight">
+            <h2 className="h2 text-carat-pink mb-6 leading-tight">
               Research
               <br />
               Publication.

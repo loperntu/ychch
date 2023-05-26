@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -12,14 +13,21 @@
   );
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
+*/
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #9796f0 21.43%,
+    #fbc7d4 
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
 
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #fbc7d4 21.43%,
+    #9796f0
   );
 }
 
@@ -27,10 +35,8 @@
 .active {
   background: linear-gradient(
     92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #fbc7d4 21.43%,
+    #9796f0
   );
 }
 
@@ -51,6 +57,9 @@
   .h3 {
     @apply font-primary font-semibold text-[30px] mb-6 leading-[46px];
   }
+  .btn:hover {
+    @apply shadow-lg text-purple-950;
+  }
   .btn {
     @apply rounded-full font-primary text-white font-medium;
   }
@@ -64,7 +73,13 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#9796f0] to-[#fbc7d4] font-bold font-primary hover:from-[#fbc7d4] hover:to-[#9796f0];
+  }
+  .text-carat-blue {
+    @apply text-[#9796f0];
+  }
+  .text-carat-pink {
+    @apply text-[#fbc7d4];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;

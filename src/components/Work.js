@@ -7,7 +7,7 @@ import Img3 from "../assets/loopy_ya.jpg";
 
 const Work = () => {
   return (
-    <section className="section my-60 " id="work">
+    <section className="section lg:py-[60vh] lg:my-[40vh]  " id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           {/* Left Columng (Text and 1st project)*/}
@@ -21,7 +21,7 @@ const Work = () => {
           >
             {/* text */}
             <div>
-              <h2 className="h2 leading-tight text-accent">
+              <h2 className="h2 leading-tight text-carat-pink">
                 My Latest
                 <br />
                 Project.

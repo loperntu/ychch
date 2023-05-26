@@ -9,9 +9,9 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section ref={ref} id="about" className="section">
+    <section ref={ref} id="about" className="section lg:pb-[40vh]">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
           {/* image row */}
           <motion.div
             variants={fadeIn("right", 0.2)}
@@ -30,7 +30,7 @@ const About = () => {
             animate={{ opacity: 1 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About me.</h2>
+            <h2 className="h2 text-carat-pink">About me.</h2>
             <h3 className="h3 mb-4">
               A learner in computational linguistics.
             </h3>

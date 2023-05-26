@@ -10,7 +10,7 @@ import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <div id="home" className="min-h-[85vh] lg:min-h-[78vh] flex items-center">
+    <div id="home" className="section lg:pb-[40vh] lg:pt-[20vh]">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* text */}
@@ -38,11 +38,11 @@ const Banner = () => {
             >
               <span className="mr-4 text-white">I am a</span>
               <TypeAnimation
-                sequence={["Learner", 2000, "PhD student", 2000, "Human", 2000]}
+                sequence={["Learner", 2000, "student", 2000, "Human", 2000]}
                 wrapper="span"
                 repeat={Infinity}
                 speed={50}
-                className="text-accent"
+                className="text-carat-pink"
               />
             </motion.div>
 
@@ -93,7 +93,7 @@ const Banner = () => {
                 className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
               >
                 <a href="https://github.com/cckk2913">
-                  <FaGithub className="text-2xl mr-4" />
+                  <FaGithub className="text-2xl mr-4" size={40}/>
                 </a>
               </motion.div>
             </motion.div>
