@@ -27,9 +27,7 @@ const Work = () => {
                 Project.
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
             {/* image */}
@@ -38,7 +36,7 @@ const Work = () => {
               onClick={() => {
                 window.open(
                   "https://multimoco.linguistics.ntu.edu.tw/index.html",
-                  "Yahoo",
+                  "MultiMoco",
                   "width=800,height=600"
                 );
               }}

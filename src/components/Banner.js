@@ -34,7 +34,7 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               animate={{ opacity: 1 }}
-              className="ml-0.5 mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]"
+              className="ml-0.5 mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1.5]"
             >
               <span className="mr-4 text-white">I am a</span>
               <TypeAnimation
@@ -55,8 +55,7 @@ const Banner = () => {
               animate={{ opacity: 1 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              
             </motion.p>
 
             {/* 三個按鈕連結 */}
@@ -70,7 +69,7 @@ const Banner = () => {
             >
               {/* click button to go to the Contact*/}
               <button
-                className="btn btn-lg"
+                className="btn btn-sm"
                 onClick={() => {
                   window.location.href = "#contact";
                 }}

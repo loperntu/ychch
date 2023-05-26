@@ -9,23 +9,28 @@ const services = [
     name: "Analyzing discourse functions with acoustic features and phone embeddings: non-lexical items in Taiwan Mandarin",
     description:
       "Pin-Er Chen, Yu-Hsiang Tseng, Chi-Wei Wang, Fang-Chi Yeh, and Shu-Kai Hsieh. 2022. In Proceedings of the 34th Conference on Computational Linguistics and Speech Processing (ROCLING 2022), pages 136–146, Taipei, Taiwan. The Association for Computational Linguistics and Chinese Language Processing (ACLCLP).",
-    link: "Learn more",
+    link: "https://aclanthology.org/2022.rocling-1.18/",
   },
   {
     name: "CxLM: A Construction and Context-aware Language Model",
     description:
       "Yu-Hsiang Tseng, Cing-Fang Shih, Pin-Er Chen, Hsin-Yu Chou, Mao-Chang Ku, and Shu-Kai Hsieh. 2022. In Proceedings of the Thirteenth Language Resources and Evaluation Conference, pages 6361–6369, Marseille, France. European Language Resources Association.",
-    link: "Learn more",
+    link: "https://aclanthology.org/2022.lrec-1.683/",
   },
   {
     name: "Exploring the Grounding Issues in Image Caption",
     description:
       "Pin-Er Chen, Hsin-Yu Chou, Po-Ya Angela Wang, Yu-Hsiang Tseng, and Shu-Kai Hsieh. 2023.",
-    link: "Learn more",
+    link: "https://arxiv.org/abs/2305.14616",
   },
 ];
 
 const Services = () => {
+  // onClink and open a new tab with url
+  const openInNewTab = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="services" className="section lg:mb-[40vh] lg:pb-[40vh]">
       <div className="container mx-auto ">
@@ -80,13 +85,16 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col flex-1 items-end ">
                       <a
-                        href="#"
                         className="btn w-9 h-9 mb-[20px] flex justify-center items-center"
+                        onClick={() => openInNewTab(link)}
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient text-sm">
-                        {link}
+                      <a
+                        className="text-gradient text-sm"
+                        onClick={() => openInNewTab(link)}
+                      >
+                        Learn more
                       </a>
                     </div>
                   </div>
