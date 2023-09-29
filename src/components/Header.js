@@ -3,7 +3,7 @@ import Logo from "../assets/logo.svg";
 
 const Header = () => {
   return (
-    <header className="bg- py-8">
+    <header className="bg-red-950 py-8">
       <div className="container mx-auto">
         <div className="flex justify-end items-center">
           {/* logo 
