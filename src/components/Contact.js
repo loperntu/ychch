@@ -36,19 +36,19 @@ const Contact = () => {
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
           >
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-3 outline-none w-full placeholder-black focus:border-accent transition-all"
               type="text"
               placeholder="姓名 name"
             ></input>
 
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-3 outline-none w-full placeholder-black focus:border-accent transition-all"
               type="text"
               placeholder="電子郵件 email"
             ></input>
             
             <textarea
-              className="bg-transparent border-b py-12 outline-none w-full placeholder-white focus:border-accent transition-all resize-none mb-12"
+              className="bg-transparent border-b py-12 outline-none w-full placeholder-black focus:border-accent transition-all resize-none mb-12"
               type="text"
               placeholder="相關資料 details"
             ></textarea>

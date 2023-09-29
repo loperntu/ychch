@@ -36,7 +36,7 @@ const Banner = () => {
               animate={{ opacity: 1 }}
               className="ml-0.5 mb-6 text-[30px] lg:text-[30px] font-primary font-semibold leading-[1.5]"
             >
-               <span className="mr-4 text-white">Ying-shih
+               <span className="mr-4 text-black">Ying-shih
 Yi International Center for History and the Chinese Humanities</span>
               {/*<TypeAnimation
                 sequence={["Learner", 2000, "student", 2000, "Human", 2000]}
@@ -75,7 +75,7 @@ Yi International Center for History and the Chinese Humanities</span>
                   window.location.href = "#contact";
                 }}
               >
-                Contact me
+                Contact
               </button>
               
               {/* social icons 

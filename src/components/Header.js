@@ -3,7 +3,7 @@ import Logo from "../assets/logo.svg";
 
 const Header = () => {
   return (
-    <header className="bg-purple-200 py-8">
+    <header className="bg- py-8">
       <div className="container mx-auto">
         <div className="flex justify-end items-center">
           {/* logo 
@@ -17,7 +17,7 @@ const Header = () => {
               window.location.href = "#contact";
             }}
           >
-            Work with me
+            相關申請
           </button>
         </div>
       </div>
