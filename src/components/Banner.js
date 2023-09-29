@@ -22,9 +22,9 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               animate={{ opacity: 1 }}
-              className="text-[52px] font-bold leading-[1] lg:text-[110px] uppercase "
+              className="text-[50px] font-bold leading-[1] lg:text-[50px] uppercase "
             >
-              Pin-Er <span>Chen</span>
+              余英時國際漢學研究中心
             </motion.h1>
 
             {/* 打字機特效 I am a ... */}
@@ -34,16 +34,17 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               animate={{ opacity: 1 }}
-              className="ml-0.5 mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1.5]"
+              className="ml-0.5 mb-6 text-[30px] lg:text-[30px] font-primary font-semibold leading-[1.5]"
             >
-              <span className="mr-4 text-white">I am a</span>
-              <TypeAnimation
+               <span className="mr-4 text-white">Ying-shih
+Yi International Center for History and the Chinese Humanities</span>
+              {/*<TypeAnimation
                 sequence={["Learner", 2000, "student", 2000, "Human", 2000]}
                 wrapper="span"
                 repeat={Infinity}
                 speed={50}
                 className="text-carat-pink"
-              />
+              /> */}
             </motion.div>
 
             {/* 一句自我介紹 */}
@@ -76,13 +77,8 @@ const Banner = () => {
               >
                 Contact me
               </button>
-              {/*<a
-                href="https://github.com/cckk2913"
-                c lassName="text-gradient btn-link"
-              >
-                My Portfolio
-              </a> */}
-              {/* social icons */}
+              
+              {/* social icons 
               <motion.div
                 variants={fadeIn("up", 0.7)}
                 initial="hidden"
@@ -94,7 +90,7 @@ const Banner = () => {
                 <a href="https://github.com/cckk2913">
                   <FaGithub className="text-2xl mr-4" size={40}/>
                 </a>
-              </motion.div>
+              </motion.div>*/}
             </motion.div>
           </div>
           {/* image */}

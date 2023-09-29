@@ -6,22 +6,22 @@ import { fadeIn } from "../variants";
 // services data
 const services = [
   {
-    name: "Analyzing discourse functions with acoustic features and phone embeddings: non-lexical items in Taiwan Mandarin",
+    name: "余英時講座",
     description:
-      "Pin-Er Chen, Yu-Hsiang Tseng, Chi-Wei Wang, Fang-Chi Yeh, and Shu-Kai Hsieh. 2022. In Proceedings of the 34th Conference on Computational Linguistics and Speech Processing (ROCLING 2022), pages 136–146, Taipei, Taiwan. The Association for Computational Linguistics and Chinese Language Processing (ACLCLP).",
-    link: "https://aclanthology.org/2022.rocling-1.18/",
+      "邀請富國際聲望、於漢學相關領域做出重要貢獻的學者，蒞臨中心給予系列演講及工作坊。",
+    link: "",
   },
   {
-    name: "CxLM: A Construction and Context-aware Language Model",
+    name: "訪問學者",
     description:
-      "Yu-Hsiang Tseng, Cing-Fang Shih, Pin-Er Chen, Hsin-Yu Chou, Mao-Chang Ku, and Shu-Kai Hsieh. 2022. In Proceedings of the Thirteenth Language Resources and Evaluation Conference, pages 6361–6369, Marseille, France. European Language Resources Association.",
-    link: "https://aclanthology.org/2022.lrec-1.683/",
+      "本中心支持各類訪問學者與本校學者之合作研究。訪問學者將由中心提供辦公空間與研究資源， 以及每個月 6 萬元的獎助津貼。每一期原則上接受 3 名中心訪問學者。此外，得視具體情況，與本校系所合作，將研究室安排於相關系所。",
+    link: "",
   },
   {
-    name: "Exploring the Grounding Issues in Image Caption",
+    name: "研究生研修獎助",
     description:
-      "Pin-Er Chen, Hsin-Yu Chou, Po-Ya Angela Wang, Yu-Hsiang Tseng, and Shu-Kai Hsieh. 2023.",
-    link: "https://arxiv.org/abs/2305.14616",
+      "以國內外大學博士候選人為原則，每月新臺幣 4 萬元獎助，獎助期限最少 3 個月，至多 12 個月。每年預定 3 人。研修期間須有本校教師擔任指導老師。",
+    link: "",
   },
 ];
 
@@ -45,15 +45,9 @@ const Services = () => {
             className="flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 max-w-[455px]"
           >
             <h2 className="h2 text-carat-pink mb-6 leading-tight">
-              Research
-              <br />
-              Publication.
+              核心任務
             </h2>
-            {/*<h3 className="h3 max-w-[455px] mb-16">
-              NLP & <br />
-              Computational Linguistics <br />
-  </h3>*/}
-            <button className="btn btn-sm">View all publications</button>
+            <button className="btn btn-sm">查看更多</button>
           </motion.div>
 
           {/* services */}
@@ -76,10 +70,10 @@ const Services = () => {
                     key={index}
                   >
                     <div className="max-w-[560px] pb-10">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold leading-tight mb-6">
+                      <h4 className="text-[30px] tracking-wider font-primary font-semibold leading-tight mb-6">
                         {name}
                       </h4>
-                      <p className="text-[14px] font-secondary leading-tight tracking-wider">
+                      <p className="text-[22px] font-secondary leading-tight tracking-wider">
                         {description}
                       </p>
                     </div>

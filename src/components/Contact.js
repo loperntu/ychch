@@ -21,7 +21,7 @@ const Contact = () => {
                 Get in touch
               </h4>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br /> together!
+                申請資訊
               </h2>
             </div>
           </motion.div>
@@ -38,16 +38,22 @@ const Contact = () => {
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder-white focus:border-accent transition-all"
               type="text"
-              placeholder="Your email"
+              placeholder="姓名 name"
+            ></input>
+
+            <input
+              className="bg-transparent border-b py-3 outline-none w-full placeholder-white focus:border-accent transition-all"
+              type="text"
+              placeholder="電子郵件 email"
             ></input>
             
             <textarea
               className="bg-transparent border-b py-12 outline-none w-full placeholder-white focus:border-accent transition-all resize-none mb-12"
               type="text"
-              placeholder="Your messeage"
+              placeholder="相關資料 details"
             ></textarea>
 
-            <button className="btn btn-sm">Send messeage</button>
+            <button className="btn btn-sm">確認送出 send</button>
           </motion.form>
         </div>
       </div>

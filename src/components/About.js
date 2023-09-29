@@ -21,6 +21,7 @@ const About = () => {
             animate={{ opacity: 1 }}
             className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
           ></motion.div>
+
           {/* text row */}
           <motion.div
             variants={fadeIn("left", 0.2)}
@@ -30,14 +31,12 @@ const About = () => {
             animate={{ opacity: 1 }}
             className="flex-1"
           >
-            <h2 className="h2 text-carat-pink">About me.</h2>
+            <h2 className="h2 text-carat-pink">中心介紹</h2>
             <h3 className="h3 mb-4">
-              A learner in computational linguistics.
+            關注研究範圍為漢學及相關人文學領域，推動、辦理與余先生學術思想相關之學術活動。
             </h3>
             <p className="mb-6 tracking-wider">
-              I am a PhD student in the Graduate Institute of Linguistics at
-              National Taiwan University. As a member of the Lab of Ontologies,
-              Language Processing and E-humanities (LOPE)
+            本中心培育國內外漢學及相關領域重點人才，促進國際人文學術交流，推廣余英時先生學術貢獻及漢學研究的全球影響力，強化臺灣作為漢學重鎮的地位，並提升本校的國際聲望和人文研究能量。
             </p>
             {/*  stats  一列有 3 columns */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">

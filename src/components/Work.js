@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img1 from "../assets/multiimoco.jpg";
 import Img2 from "../assets/loopy_sleep.png";
 import Img3 from "../assets/loopy_ya.jpg";
 
@@ -22,13 +21,11 @@ const Work = () => {
             {/* text */}
             <div>
               <h2 className="h2 leading-tight text-carat-pink">
-                My Latest
-                <br />
-                Project.
+                近期活動
               </h2>
               <p className="max-w-sm mb-16">
                </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm">查看更多</button>
             </div>
             {/* image */}
             <div
@@ -48,16 +45,16 @@ const Work = () => {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img2}
                 alt=""
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">MultiMoco</span>
+                <span className="text-gradient">講座A</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-6 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">Multimodal Corpus for Languages in Taiwan</span>
+                <span className="text-3xl text-white ">講座A的一些說明文字</span>
               </div>
             </div>
           </motion.div>
@@ -85,11 +82,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Looooooooopy</span>
+                <span className="text-gradient">講座B</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">Project Title</span>
+                <span className="text-3xl text-white ">講座B的一些說明文字</span>
               </div>
             </div>
 
@@ -107,11 +104,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Looooooooopy</span>
+                <span className="text-gradient">講座C</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">Project Title</span>
+                <span className="text-3xl text-white ">講座C的一些說明文字</span>
               </div>
             </div>
           </motion.div>
