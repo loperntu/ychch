@@ -14,13 +14,13 @@ const services = [
   {
     name: "訪問學者",
     description:
-      "本中心支持各類訪問學者與本校學者之合作研究。訪問學者將由中心提供辦公空間與研究資源， 以及每個月 6 萬元的獎助津貼。每一期原則上接受 3 名中心訪問學者。此外，得視具體情況，與本校系所合作，將研究室安排於相關系所。",
+      "支持各類訪問學者與本校學者之合作研究。訪問學者將由中心提供辦公空間、研究資源、每個月 6 萬元的獎助津貼。每一期原則上接受 3 名中心訪問學者。",
     link: "",
   },
   {
     name: "研究生研修獎助",
     description:
-      "以國內外大學博士候選人為原則，每月新臺幣 4 萬元獎助，獎助期限最少 3 個月，至多 12 個月。每年預定 3 人。研修期間須有本校教師擔任指導老師。",
+      "以國內外大學博士候選人為原則，每年預定 3 人，每月獎助新臺幣 4 萬元，獎助期限至少 3 個月、至多 12 個月。研修期間須有本校教師擔任指導老師。",
     link: "",
   },
 ];
@@ -32,7 +32,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="section lg:mb-[40vh] lg:pb-[40vh]">
+    <section id="task" className="section lg:mb-[40vh] lg:pb-[40vh]">
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row ">
           {/* text & image */}

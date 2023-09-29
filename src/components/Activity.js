@@ -6,7 +6,7 @@ import Img3 from "../assets/loopy_ya.jpg";
 
 const Work = () => {
   return (
-    <section className="section lg:py-[60vh] lg:my-[40vh]  " id="work">
+    <section className="section lg:py-[60vh] lg:my-[40vh]  " id="activity">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           {/* Left Columng (Text and 1st project)*/}

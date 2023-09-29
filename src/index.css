@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
 /*
 .btn {
   background: linear-gradient(
@@ -17,8 +25,8 @@
 .btn {
   background: linear-gradient(
     92.23deg,
-    #f0db96,
-    #f0db96
+    #e9a182,
+    #e9a182
   );
   /*box-shadow: 0px 4.42184px 107.23px rgba(55, 87, 41, 52);*/
 }
@@ -26,19 +34,23 @@
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    #f0db96,
-    #f0db96
+    #e9a182,
+    #e9a182
   );
 }
 
 .gradient,
 .active {
+  color: azure;
+}
+
+/* .active {
   background: linear-gradient(
     92.23deg,
     #fbc7d4 21.43%,
     #9796f0
   );
-}
+} */
 
 .active {
   color: #000000;
@@ -85,10 +97,15 @@
     @apply text-[#9796f0];
   }
   .text-carat-pink {
-    @apply text-[#fbc7d4];
+    @apply text-[#ff7f50];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
-
+  .desktopMenu{
+    @apply flex text-white items-stretch space-x-8;
+  }
+  .desktopMenuListItem{
+    @apply w-[75px] h-[60px] flex items-center justify-center;
+  }
 }

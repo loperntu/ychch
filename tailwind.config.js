@@ -1,10 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  /* Lexend-50&Zilla-30 # Outfit&Spline Sans */
+  /* Lexend-50&Zilla-30 # Outfit&Spline Sans 
+  改字體步驟：1.在google font網站產出連結 2.把連結寫在index.html最上面 3.到這裡改fontFamily*/
   theme: {
     fontFamily: {
-      primary: "Outfit",
-      secondary: "Spline Sans",
+      primary: "Noto Serif TC",
+      secondary: "Noto Serif TC",
       tertiary: "Aldrich",
     },
     container: {
