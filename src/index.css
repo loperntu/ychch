@@ -84,28 +84,25 @@
   .btn-link {
     @apply text-base;
   }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#4f0618] to-[#fbc7d4] font-bold font-primary hover:from-[#fbc7d4] hover:to-[#40221c];
   }
   .text-light-yellow{
     @apply text-[#f2e7e5];
   }
-  .text-light-pink{
-    @apply text-[rgb(242,202,201)];
+  .text-section-title {
+    @apply text-[#BF7C06] h2;
   }
-  .text-carat-blue {
-    @apply text-[#9796f0];
-  }
-  .text-carat-pink {
-    @apply text-[#ff7f50];
-  }
-  .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
-  }
+
   .desktopMenu{
     @apply flex text-white items-stretch space-x-8;
   }
   .desktopMenuListItem{
-    @apply w-[75px] h-[60px] flex items-center justify-center;
+    margin: 1rem;
+    cursor: pointer;
   }
 }

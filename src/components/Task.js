@@ -42,9 +42,9 @@ const Services = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             animate={{ opacity: 1 }}
-            className="flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 max-w-[455px]"
-          >
-            <h2 className="h2 text-carat-pink mb-6 leading-tight">
+            className="flex-1 lg:bg-bottom bg-no-repeat mb-12 lg:mb-0 max-w-[455px]"
+          > {/*img classname= "mix-blend-lighten"  */}
+            <h2 className="text-section-title mb-6 leading-tight">
               核心任務
             </h2>
             <button className="btn btn-sm">查看更多</button>

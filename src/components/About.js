@@ -18,8 +18,8 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            animate={{ opacity: 1 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            animate={{ opacity: 2 }}
+            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px]  bg-top"
           ></motion.div>
 
           {/* text row */}
@@ -31,7 +31,7 @@ const About = () => {
             animate={{ opacity: 1 }}
             className="flex-1"
           >
-            <h2 className="h2 text-carat-pink">中心介紹</h2>
+            <h2 className="text-section-title">中心介紹</h2>
             <h3 className="h3 mb-4">
             關注研究漢學及相關人文學領域，推動辦理余先生學術思想相關之學術活動
             </h3>

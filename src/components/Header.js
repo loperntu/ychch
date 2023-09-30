@@ -4,7 +4,7 @@ import {Link} from 'react-scroll'
 
 const Header = () => {
   return (
-    <header className="bg-red-950 py-8">
+    <header className="bg-[#8E2A01] py-8">
       <div className="container mx-auto">
         <div className="flex justify-end items-center space-x-8">
           {/* logo 

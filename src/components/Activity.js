@@ -20,7 +20,7 @@ const Work = () => {
           >
             {/* text */}
             <div>
-              <h2 className="h2 leading-tight text-carat-pink">
+              <h2 className="text-section-title ">
                 近期活動
               </h2>
               <p className="max-w-sm mb-16">
