@@ -154,17 +154,17 @@
     text-align: center;
     border: 1px solid #ffffff;
     height: 300px;
-    width: 200px;
+    width: 250px;
     
   }
   .memberName{
-    @apply text-[28px] tracking-wider font-semibold font-secondary leading-tight mb-6
+    @apply text-[24px] tracking-wider font-semibold font-secondary leading-tight mb-6
   }
   .memberDescription{
-    @apply text-[20px] font-secondary leading-tight tracking-wider
+    @apply text-[18px] font-secondary leading-tight tracking-wider
   }
   .memberContactInfo{
-    @apply text-[20px] font-secondary leading-tight tracking-wider
+    @apply text-[18px] font-secondary leading-tight tracking-wider
   }
     
 }
