@@ -32,12 +32,12 @@ const About = ({ t }) => {
             animate={{ opacity: 1 }}
             className="flex-1"
           >
-            <h2 className="text-section-title">中心介紹</h2>
+            <h2 className="text-section-title">{t("about_us")}</h2>
             <h3 className="h3 mb-4">
-            關注研究漢學及相關人文學領域，辦理余先生學術思想相關活動
+            {t("about_us_sub")}
             </h3>
             <p className="mb-6 tracking-wider">
-            本中心培育國內外漢學相關領域重點人才，促進國際人文學術交流，推廣余英時先生學術貢獻及漢學研究，強化臺灣作為漢學重鎮的地位，並提升本校的國際聲望和人文研究能量。
+            {t("aboout_us_content")}
             </p>
             
             {/*  stats  一列有 3 columns */}
