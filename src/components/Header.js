@@ -21,7 +21,7 @@ const Header = ({ t }) => {
             <Link to="about" className="desktopMenuListItem">{t("about_us")}</Link>
             <Link to="task" className="desktopMenuListItem">{t("core_task")}</Link>
             <Link to="activity" className="desktopMenuListItem">{t("recent_activity")}</Link>
-            <Link to="member" className="desktopMenuListItem">{t("group_framework")}</Link>
+            <Link to="group" className="desktopMenuListItem">{t("group_framework")}</Link>
           </div>
           <button
             className="btn btn-sm "

@@ -30,9 +30,9 @@ const members = [
   },
 ];
 
-const Member = ({ t }) => {
+const Group = ({ t }) => {
   return (
-    <section id="member" className="section ">
+    <section id="group" className="section ">
       <div className="container mx-auto">
         {/* text row */}
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
@@ -94,4 +94,4 @@ const Member = ({ t }) => {
   );
 };
 
-export default Member;
+export default Group;

@@ -7,7 +7,7 @@ import About from './components/About';
 import Task from './components/Task';
 import Activity from './components/Activity';
 import Contact from './components/Contact';
-import Member from './components/Member';
+import Group from './components/Group';
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 
@@ -44,7 +44,7 @@ const App = () => {
       <About t={t} />
       <Task t={t} />
       <Activity t={t} />
-      <Member t={t} />
+      <Group t={t} />
       <Contact t={t} />
       <div className='h-[4000px]'></div>
     </div>
