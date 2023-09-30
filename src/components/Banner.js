@@ -70,7 +70,7 @@ Yi International Center for History and the Chinese Humanities</span>
               animate={{ opacity: 1 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              {/* click button to go to the Contact*/}
+              {/* click button to go to the Contact
               <button
                 className="btn btn-sm"
                 onClick={() => {
@@ -79,6 +79,7 @@ Yi International Center for History and the Chinese Humanities</span>
               >
                 Contact
               </button>
+              */}
               
               {/* social icons 
               <motion.div
