@@ -22,11 +22,11 @@
   "activity_c_content":"講座C內容",
   "group_framework_sub":"本中心之諮詢委員會，委員 7-11 人，由本校與中研院共同推薦關注研究漢學及相關人文學領域，辦理余先生學術思想相關活動",
   "group_member_a_name":"陳弱水", 
-  "group_member_a_desc":"一些工作職務",
+  "group_member_a_description":"一些工作職務",
   "group_member_b_name":"一二三",
-  "group_member_b_desc":"一些工作職務",
+  "group_member_b_description":"一些工作職務",
   "group_member_c_name":"四五六",
-  "group_member_c_desc":"一些工作職務",
+  "group_member_c_description":"一些工作職務",
   "group_member_d_name":"七八九",
-  "group_member_d_desc":"一些工作職務"
+  "group_member_d_description":"一些工作職務"
 }

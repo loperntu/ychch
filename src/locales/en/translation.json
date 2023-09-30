@@ -16,11 +16,11 @@
   "core_task_c_content": "Primarily for doctoral candidates from domestic and foreign universities, with a planned intake of 3 individuals per year. Each awardee will receive a monthly grant of 40,000 NTD, with a grant period of at least 3 months and a maximum of 12 months. During the research period, a faculty member from our university must serve as the supervisor.",
   "group_framework_sub": "The advisory committee of this center consists of 7-11 members recommended jointly by our university and the Academia Sinica, focusing on the study of Sinology and related humanities fields and organizing activities related to Mr. Yu Ying-shih's academic thoughts.",
   "group_member_a_name": "Chen Jo-shui",
-  "group_member_a_desc": "Some job description",
+  "group_member_a_description": "Some job description",
   "group_member_b_name": "One Two Three",
-  "group_member_b_desc": "Some job description",
+  "group_member_b_description": "Some job description",
   "group_member_c_name": "Four Five Six",
-  "group_member_c_desc": "Some job description",
+  "group_member_c_description": "Some job description",
   "group_member_d_name": "Seven Eight Nine",
-  "group_member_d_desc": "Some job description"
+  "group_member_d_description": "Some job description"
 }
