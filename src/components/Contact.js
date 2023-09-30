@@ -19,7 +19,7 @@ const Contact = ({ t }) => {
           >
             <div>
               <h2 className="text-section-title ">
-                申請資訊
+                {t("application")}
               </h2>
             </div>
           </motion.div>

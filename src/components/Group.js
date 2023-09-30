@@ -39,10 +39,9 @@ const Group = ({ t }) => {
             animate={{ opacity: 1 }}
             className="flex-1"
           >
-            <h2 className="text-section-title">組織架構</h2>
+            <h2 className="text-section-title">{t("group_framework")}</h2>
             <p className=" mb-4">
-              本中心之諮詢委員會，委員 7-11
-              人，由本校與中研院共同推薦關注研究漢學及相關人文學領域，辦理余先生學術思想相關活動
+              {t("group_framework_sub")}
             </p>
           </motion.div>
         </div>
