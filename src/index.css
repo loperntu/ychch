@@ -10,25 +10,12 @@
   background: transparent;
 }
 
-/*
 .btn {
   background: linear-gradient(
     92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
+    #E1C9B9,
+    #E1C9B9
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
-}
-*/
-.btn {
-  background: linear-gradient(
-    92.23deg,
-    #e9a182,
-    #e9a182
-  );
-  /*box-shadow: 0px 4.42184px 107.23px rgba(55, 87, 41, 52);*/
 }
 
 .btn:hover {
@@ -43,24 +30,26 @@
 .active {
   color: azure;
 }
-
-/* .active {
-  background: linear-gradient(
-    92.23deg,
-    #fbc7d4 21.43%,
-    #9796f0
-  );
-} */
-
 .active {
   color: #000000;
   padding: 1rem;
   border-radius: 100%;
 }
 
+/* The @layer directive helps you control declaration order by automatically relocating your styles to the corresponding @tailwind directive, also enables features like modifiers and tree-shaking for your own custom CSS. */
+
 @layer base {
+  
   body {
-    @apply font-secondary text-lg leading-8 text-black;
+    --font: font-secondary;
+    --font-size: 16px;
+    --line-height: 1.5;
+    --text-color: #000000;
+
+    font-family: var(--font);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
   }
   /*原本h2:32px h3:26px*/
   .h2 {
@@ -69,6 +58,12 @@
   .h3 {
     @apply font-primary font-semibold text-[30px] mb-6 leading-[46px];
   }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+
+
+  /* Button */
   .btn:hover {
     @apply  text-purple-950;
   }
@@ -84,10 +79,9 @@
   .btn-link {
     @apply text-base;
   }
-  .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
-  }
-  
+
+
+  /* Text */
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#4f0618] to-[#fbc7d4] font-bold font-primary hover:from-[#fbc7d4] hover:to-[#40221c];
   }
@@ -95,14 +89,46 @@
     @apply text-[#f2e7e5];
   }
   .text-section-title {
-    @apply text-[#BF7C06] h2;
+    @apply text-[#c6653a] h2;
   }
 
+
+  /* Header */
   .desktopMenu{
     @apply flex text-white items-stretch space-x-8;
   }
   .desktopMenuListItem{
     margin: 1rem;
     cursor: pointer;
+  }
+  .desktopMenuListItem:hover{
+    color: #E1C9B9;
+    border-bottom: 3px solid #E1C9B9;
+  }
+
+  /* Intro */
+  .intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .bg-intro {
+    position: absolute;
+
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+  .introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    
   }
 }

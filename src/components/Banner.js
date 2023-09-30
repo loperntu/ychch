@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/avatar.svg";
+import Image from "../assets/loopy.jpg";
 import { FaGithub } from "react-icons/fa";
 // type animation
 import { TypeAnimation } from "react-type-animation";
@@ -10,12 +10,14 @@ import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <div id="home" className="section lg:pb-[40vh] lg:pt-[20vh]">
+    <section
+      id="home"
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+          
           {/* text */}
           <div className="flex-1 text-center font-primary lg:text-left">
-            {/* 名字 */}
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -47,7 +49,7 @@ Yi International Center for History and the Chinese Humanities</span>
               /> */}
             </motion.div>
 
-            {/* 一句自我介紹 */}
+            {/* 一句介紹 */}
             <motion.p
               variants={fadeIn("up", 0.5)}
               initial="hidden"
@@ -93,20 +95,19 @@ Yi International Center for History and the Chinese Humanities</span>
               </motion.div>*/}
             </motion.div>
           </div>
+
           {/* image */}
           <motion.div
-            variants={fadeIn("up", 0.5)}
+            variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            animate={{ opacity: 1 }}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
             <image src={Image} alt="" />
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
