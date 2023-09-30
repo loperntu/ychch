@@ -5,6 +5,7 @@ import { fadeIn } from "../variants";
 const Contact = () => {
   return (
     <section id="contact" className="py-16 lg:section lg:my-60 lg:pb-80">
+      
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
@@ -52,6 +53,7 @@ const Contact = () => {
 
             <button className="btn btn-sm">確認送出 send</button>
           </motion.form>
+
         </div>
       </div>
     </section>

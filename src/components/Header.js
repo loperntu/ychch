@@ -17,6 +17,7 @@ const Header = () => {
             <Link to="about" className="desktopMenuListItem">中心介紹</Link>
             <Link to="task" className="desktopMenuListItem">核心任務</Link>
             <Link to="activity" className="desktopMenuListItem">近期活動</Link>
+            <Link to="member" className="desktopMenuListItem">組織架構</Link>
           </div>
           <button
             className="btn btn-sm "

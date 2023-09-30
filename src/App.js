@@ -7,6 +7,7 @@ import About from './components/About';
 import Task from './components/Task';
 import Activity from './components/Activity';
 import Contact from './components/Contact';
+import Member from './components/Member';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <About />
       <Task />
       <Activity />
+      <Member />
       <Contact />
       <div className='h-[4000px]'></div>
     </div>
