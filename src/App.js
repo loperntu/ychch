@@ -1,6 +1,6 @@
 import React from 'react';
 // components
-import Banner from './components/Banner';
+import Home from './components/Home';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -40,7 +40,7 @@ const App = () => {
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       {/* pass down useTranslation() to each components  */}
       <Header t={t} />
-      <Banner t={t} /> 
+      <Home t={t} /> 
       <About t={t} />
       <Task t={t} />
       <Activity t={t} />

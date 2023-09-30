@@ -161,7 +161,7 @@
     @apply text-[24px] tracking-wider font-semibold font-secondary leading-tight mb-6
   }
   .memberDescription{
-    @apply text-[18px] font-secondary leading-tight tracking-wider
+    @apply text-[18px] font-secondary leading-tight tracking-wider mb-3
   }
   .memberContactInfo{
     @apply text-[18px] font-secondary leading-tight tracking-wider
