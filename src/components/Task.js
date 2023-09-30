@@ -2,25 +2,26 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 import { fadeIn } from "../variants";
+import { t } from "i18next";
 
 // services data
 const services = [
   {
-    name: "余英時講座",
+    name: t("core_task_a_name"),
     description:
-      "邀請富國際聲望、於漢學相關領域做出重要貢獻的學者，蒞臨中心給予系列演講及工作坊。",
+    t("core_task_a_content"),
     link: "",
   },
   {
-    name: "訪問學者",
+    name: t("core_task_b_name"),
     description:
-      "支持各類訪問學者與本校學者之合作研究。訪問學者將由中心提供辦公空間、研究資源、每個月 6 萬元的獎助津貼。每一期原則上接受 3 名中心訪問學者。",
+    t("core_task_b_content"),
     link: "",
   },
   {
-    name: "研究生研修獎助",
+    name: t("core_task_c_name"),
     description:
-      "以國內外大學博士候選人為原則，每年預定 3 人，每月獎助新臺幣 4 萬元，獎助期限至少 3 個月、至多 12 個月。研修期間須有本校教師擔任指導老師。",
+    t("core_task_c_content"),
     link: "",
   },
 ];
@@ -45,9 +46,11 @@ const Services = ({ t }) => {
             className="flex-1 lg:bg-bottom bg-no-repeat mb-12 lg:mb-0 max-w-[455px]"
           > {/*img classname= "mix-blend-lighten"  */}
             <h2 className="text-section-title mb-6 leading-tight">
-              核心任務
+              {t("core_task")}
             </h2>
-            <button className="btn btn-sm">查看更多</button>
+            <button className="btn btn-sm">
+              {t("see_more")}
+            </button>
           </motion.div>
 
           {/* services */}

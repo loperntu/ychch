@@ -21,11 +21,13 @@ const Work = ({ t }) => {
             {/* text */}
             <div>
               <h2 className="text-section-title ">
-                近期活動
+                {t("recent_activity")}
               </h2>
               <p className="max-w-sm mb-16">
                </p>
-              <button className="btn btn-sm">查看更多</button>
+              <button className="btn btn-sm">
+                {t("see_more")}
+              </button>
             </div>
             {/* image */}
             <div
@@ -50,11 +52,11 @@ const Work = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">講座A</span>
+                <span className="text-gradient">{t("activity_a_name")}</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-6 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">講座A的一些說明文字</span>
+                <span className="text-3xl text-white ">{t("activity_a_content")}</span>
               </div>
             </div>
           </motion.div>
@@ -82,11 +84,11 @@ const Work = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">講座B</span>
+                <span className="text-gradient">{t("activity_b_name")}</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">講座B的一些說明文字</span>
+                <span className="text-3xl text-white ">{t("activity_b_content")}</span>
               </div>
             </div>
 
@@ -104,11 +106,11 @@ const Work = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">講座C</span>
+                <span className="text-gradient">{t("activity_c_name")}</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">講座C的一些說明文字</span>
+                <span className="text-3xl text-white ">{t("activity_c_content")}</span>
               </div>
             </div>
           </motion.div>
