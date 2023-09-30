@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll';
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = ({ t }) => {
   return (
@@ -13,11 +14,14 @@ const Header = ({ t }) => {
           </a>*/}
           {/* button */}
           <div className="desktopMenu">
-            <Link to="home" className="desktopMenuListItem">首頁</Link>
-            <Link to="about" className="desktopMenuListItem">中心介紹</Link>
-            <Link to="task" className="desktopMenuListItem">核心任務</Link>
-            <Link to="activity" className="desktopMenuListItem">近期活動</Link>
-            <Link to="member" className="desktopMenuListItem">組織架構</Link>
+            
+              <LanguageSwitcher />
+
+            <Link to="home" className="desktopMenuListItem">{t("home_page")}</Link>
+            <Link to="about" className="desktopMenuListItem">{t("about_us")}</Link>
+            <Link to="task" className="desktopMenuListItem">{t("core_task")}</Link>
+            <Link to="activity" className="desktopMenuListItem">{t("recent_activity")}</Link>
+            <Link to="member" className="desktopMenuListItem">{t("group_framework")}</Link>
           </div>
           <button
             className="btn btn-sm "
@@ -25,7 +29,7 @@ const Header = ({ t }) => {
               window.location.href = "#contact";
             }}
           >
-            相關申請
+            {t("application")}
           </button>
         </div>
       </div>

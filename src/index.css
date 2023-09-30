@@ -97,6 +97,45 @@
     color: #E1C9B9;
     border-bottom: 3px solid #E1C9B9;
   }
+  .custom-select {
+    min-width: 350px;
+  }
+  select {
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    /* other styles for aesthetics */
+    color: #000;
+    background-color: #fff;
+    font-size: 1.15rem;
+    width: 60px;
+    padding: 10px ;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+.custom-select::before,
+.custom-select::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 40%;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 55%;
+}
 
 
   /* Member */
