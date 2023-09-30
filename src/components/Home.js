@@ -24,7 +24,7 @@ const Banner = ({ t }) => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               animate={{ opacity: 1 }}
-              className="text-[50px] font-bold leading-[1] lg:text-[50px] uppercase "
+              className="text-[50px] font-bold leading-[1] lg:text-[50px] uppercase mb-2"
             >
               余英時國際漢學研究中心
             </motion.h1>
@@ -38,8 +38,7 @@ const Banner = ({ t }) => {
               animate={{ opacity: 1 }}
               className="ml-0.5 mb-6 text-[30px] lg:text-[30px] font-primary font-semibold leading-[1.5]"
             >
-               <span className="mr-4 text-black">Ying-shih
-Yi International Center for History and the Chinese Humanities</span>
+               <span className="mr-4 text-black">Ying-shih Yi International Center for History and the Chinese Humanities</span>
               {/*<TypeAnimation
                 sequence={["Learner", 2000, "student", 2000, "Human", 2000]}
                 wrapper="span"
