@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const Contact = () => {
+const Contact = ({ t }) => {
   return (
     <section id="contact" className="py-16 lg:section lg:my-60 lg:pb-80">
       

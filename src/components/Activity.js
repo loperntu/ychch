@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 import Img2 from "../assets/loopy_sleep.png";
 import Img3 from "../assets/loopy_ya.jpg";
 
-const Work = () => {
+const Work = ({ t }) => {
   return (
     <section className="section lg:py-[60vh] lg:my-[40vh]  " id="activity">
       <div className="container mx-auto">

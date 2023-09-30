@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/logo.svg";
 import {Link} from 'react-scroll'
 
-const Header = () => {
+const Header = ({ t }) => {
   return (
     <header className="bg-[#8E2A01] py-8">
       <div className="container mx-auto">

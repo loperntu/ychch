@@ -25,7 +25,7 @@ const services = [
   },
 ];
 
-const Services = () => {
+const Services = ({ t }) => {
   // onClink and open a new tab with url
   const openInNewTab = (url) => {
     window.open(url, "_blank");

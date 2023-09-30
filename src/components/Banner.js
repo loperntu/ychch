@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 
-const Banner = () => {
+const Banner = ({ t }) => {
   return (
     <section
       id="home"

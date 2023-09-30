@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const About = () => {
+const About = ({ t }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
   });

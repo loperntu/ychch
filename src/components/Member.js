@@ -30,7 +30,7 @@ const members = [
   },
 ];
 
-const Member = () => {
+const Member = ({ t }) => {
   return (
     <section id="member" className="section ">
       <div className="container mx-auto">
