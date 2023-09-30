@@ -5,28 +5,29 @@ import { fadeIn } from "../variants";
 import { t } from "i18next";
 
 // services data
-const services = [
-  {
-    name: t("core_task_a_name"),
-    description:
-    t("core_task_a_content"),
-    link: "",
-  },
-  {
-    name: t("core_task_b_name"),
-    description:
-    t("core_task_b_content"),
-    link: "",
-  },
-  {
-    name: t("core_task_c_name"),
-    description:
-    t("core_task_c_content"),
-    link: "",
-  },
-];
 
 const Services = ({ t }) => {
+  const services = [
+    {
+      name: t("core_task_a_name"),
+      description:
+      t("core_task_a_content"),
+      link: "",
+    },
+    {
+      name: t("core_task_b_name"),
+      description:
+      t("core_task_b_content"),
+      link: "",
+    },
+    {
+      name: t("core_task_c_name"),
+      description:
+      t("core_task_c_content"),
+      link: "",
+    },
+  ];
+  
   // onClink and open a new tab with url
   const openInNewTab = (url) => {
     window.open(url, "_blank");
