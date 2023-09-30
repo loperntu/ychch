@@ -9,7 +9,7 @@ const About = ({ t }) => {
     threshold: 0.5,
   });
   return (
-    <section ref={ref} id="about" className="section lg:pb-[40vh]">
+    <section ref={ref} id="about" className="section lg:pb-[20vh] lg:mb-20">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
 

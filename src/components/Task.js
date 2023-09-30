@@ -33,7 +33,7 @@ const Services = ({ t }) => {
   };
 
   return (
-    <section id="task" className="section lg:mb-[40vh] lg:pb-[40vh]">
+    <section id="task" className="section lg:pb-[10vh] lg:mb-[40vh]">
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row ">
           {/* text & image */}
