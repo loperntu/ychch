@@ -6,7 +6,7 @@ const Contact = ({ t }) => {
   return (
     <section id="contact" className="lg:section">
       
-      <div className="container mx-auto my-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
@@ -31,7 +31,7 @@ const Contact = ({ t }) => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             animate={{ opacity: 1 }}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 border rounded-2xl flex flex-col gap-y-6 p-6 items-start font-secondary"
           >
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder-black focus:border-accent transition-all"

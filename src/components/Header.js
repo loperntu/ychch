@@ -22,7 +22,7 @@ const Header = ({ t }) => {
             <Link to="task" className="desktopMenuListItem">{t("core_task")}</Link>
             <Link to="activity" className="desktopMenuListItem">{t("recent_activity")}</Link>
             <Link to="group" className="desktopMenuListItem">{t("group_framework")}</Link>
-            <Link to="group" className="desktopMenuListItem">{t("application")}</Link>
+            <Link to="contact" className="desktopMenuListItem">{t("application")}</Link>
           </div>
         </div>
       </div>

@@ -9,11 +9,11 @@ const Banner = ({ t }) => {
   return (
     <section
       id="home"
-      className="lg:min-h-[78vh] flex items-center">
-      <div className="container mx-auto">
-        <div className="flex flex-col gap-y-6 gap-x-10 lg:flex-row lg:items-center ">          
+      className="lg:min-h-[90vh] flex items-center">
+      <div className="container mx-auto my-auto">
+        <div className="flex flex-col gap-y-6 gap-x-8 lg:flex-row lg:items-center ">          
           {/* Column1: text */}
-          <div className="flex-1 w-3/5 font-primary text-center lg:text-left">
+          <div className="flex-1 w-3/5 font-primary text-center lg:text-left mr-8">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
