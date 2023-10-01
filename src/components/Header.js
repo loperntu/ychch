@@ -13,7 +13,7 @@ const Header = ({ t }) => {
             <img src={Logo} alt="logo" />
           </a>*/}
           {/* button */}
-          <div className="desktopMenu">
+          <div className="desktopMenu items-center">
             
               <LanguageSwitcher />
 
@@ -22,15 +22,8 @@ const Header = ({ t }) => {
             <Link to="task" className="desktopMenuListItem">{t("core_task")}</Link>
             <Link to="activity" className="desktopMenuListItem">{t("recent_activity")}</Link>
             <Link to="group" className="desktopMenuListItem">{t("group_framework")}</Link>
+            <Link to="group" className="desktopMenuListItem">{t("application")}</Link>
           </div>
-          <button
-            className="btn btn-sm "
-            onClick={() => {
-              window.location.href = "#contact";
-            }}
-          >
-            {t("application")}
-          </button>
         </div>
       </div>
     </header>

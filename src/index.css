@@ -63,7 +63,7 @@
     @apply rounded-full font-primary text-black font-medium;
   }
   .btn-sm {
-    @apply h-[48px] px-6 text-sm;
+    @apply h-[30px] px-6 text-sm;
   }
   .btn-lg {
     @apply h-[56px] px-10 text-base;
@@ -87,54 +87,58 @@
 
   /* Header */
   .desktopMenu{
-    @apply flex text-white items-stretch space-x-8;
+    @apply flex text-white font-secondary items-stretch space-x-8 my-2; 
   }
   .desktopMenuListItem{
-    margin: 1rem;
     cursor: pointer;
   }
+  /* 碰到的時候會出現底線 */
   .desktopMenuListItem:hover{
+    margin: 0 0 0 0;
     color: #E1C9B9;
     border-bottom: 3px solid #E1C9B9;
   }
-  .custom-select {
-    min-width: 350px;
+
+  .custom-select{
+  position: relative;
+  display: block;
+  max-width: 60px;
+  min-width: 30px;
+  margin: auto;
+  border: 1px solid #3C1C78;
+  background-color: #ffffff;
+  z-index: 10;
   }
-  select {
+  select{
     appearance: none;
-    /* safari */
     -webkit-appearance: none;
-    /* other styles for aesthetics */
-    color: #000;
-    background-color: #fff;
-    font-size: 1.15rem;
+    -moz-appearance: none;
+    display: block;
+    outline: none;
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin: 0;
+    height: 38px;
     width: 60px;
-    padding: 10px ;
-    border: 1px solid #caced1;
-    border-radius: 0.25rem;
-    cursor: pointer;
+    /* text settings */
+    text-align: center;
+    font-size: 16px;
+    color: black;
   }
-.custom-select::before,
-.custom-select::after {
-  --size: 0.3rem;
-  position: absolute;
-  content: "";
-  right: 1rem;
-  pointer-events: none;
-}
-
-.custom-select::before {
-  border-left: var(--size) solid transparent;
-  border-right: var(--size) solid transparent;
-  border-bottom: var(--size) solid black;
-  top: 40%;
-}
-
-.custom-select::after {
-  border-left: var(--size) solid transparent;
-  border-right: var(--size) solid transparent;
-  border-top: var(--size) solid black;
-  top: 55%;
+  &:after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 38px;
+    content: '\2228';
+    text-align: center;
+    color: #714BB9;
+    font-size: 24px;
+    border-left: 1px solid #3C1C78;
+    z-index: -1;
 }
 
 
