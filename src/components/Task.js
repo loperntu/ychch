@@ -89,7 +89,7 @@ const Services = ({ t }) => {
                         <BsArrowUpRight />
                       </a>
                       <a
-                        className="text-gradient text-sm"
+                        className="text-sm text-brown"
                         onClick={() => openInNewTab(link)}
                       >
                         Learn more
