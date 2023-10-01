@@ -50,6 +50,9 @@
   .h3 {
     @apply font-primary font-semibold text-[30px] mb-6 leading-[46px];
   }
+  .h4 {
+    @apply font-secondary text-[20px];
+  }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }

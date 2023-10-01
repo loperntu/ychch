@@ -33,12 +33,10 @@ const About = ({ t }) => {
             className="flex-1"
           >
             <h2 className="text-section-title">{t("about_us")}</h2>
-            <h3 className="h3 mb-4">
+            <h3 className="h3">
             {t("about_us_sub")}
             </h3>
-            <p className="mb-6 tracking-wider">
-            {t("aboout_us_content")}
-            </p>
+            <h4 className="h4 tracking-wider">{t("aboout_us_content")}</h4>
             
             {/*  stats  一列有 3 columns */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">

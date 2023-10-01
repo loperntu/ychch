@@ -6,7 +6,7 @@ module.exports = {
     fontFamily: {
       primary: "Noto Serif TC",
       secondary: "Noto Serif TC",
-      tertiary: "Aldrich",
+      tertiary: "Noto Serif TC",
     },
     container: {
       padding: {
