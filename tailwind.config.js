@@ -26,8 +26,8 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/fullwhite.jpg')",
-        about: "url('./assets/loopy.jpg')",
-        services: "url('./assets/loopy_meng.png')",
+        about: "url('./assets/tang_wenhuitu_small.png')",
+        services: "url('./assets/tang_wenhuitu_small.png')",
       },
     },
   },

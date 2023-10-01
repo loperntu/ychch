@@ -40,7 +40,7 @@ const Group = ({ t }) => {
             className="flex-1"
           >
             <h2 className="text-section-title">{t("group_framework")}</h2>
-            <p className="font-secondary mb-6">{t("group_framework_sub")} </p>
+            <h4 className="h4">{t("group_framework_sub")} </h4>
           </motion.div>
         </div>
 

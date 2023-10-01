@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img2 from "../assets/loopy_sleep.png";
-import Img3 from "../assets/loopy_ya.jpg";
+import Img from "../assets/tang_wenhuitu_small.png";
 
 const Work = ({ t }) => {
   return (
@@ -20,14 +19,9 @@ const Work = ({ t }) => {
           >
             {/* text */}
             <div>
-              <h2 className="text-section-title ">
-                {t("recent_activity")}
-              </h2>
-              <p className="max-w-sm mb-16">
-               </p>
-              <button className="btn btn-sm">
-                {t("see_more")}
-              </button>
+              <h2 className="text-section-title ">{t("recent_activity")}</h2>
+              <p className="max-w-sm mb-16"></p>
+              <button className="btn btn-sm">{t("see_more")}</button>
             </div>
             {/* image */}
             <div
@@ -47,7 +41,7 @@ const Work = ({ t }) => {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
+                src={Img}
                 alt=""
               />
               {/* pretitle */}
@@ -56,7 +50,9 @@ const Work = ({ t }) => {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-6 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">{t("activity_a_content")}</span>
+                <span className="text-3xl text-white ">
+                  {t("activity_a_content")}
+                </span>
               </div>
             </div>
           </motion.div>
@@ -79,7 +75,7 @@ const Work = ({ t }) => {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
+                src={Img}
                 alt=""
               />
               {/* pretitle */}
@@ -88,7 +84,9 @@ const Work = ({ t }) => {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">{t("activity_b_content")}</span>
+                <span className="text-3xl text-white ">
+                  {t("activity_b_content")}
+                </span>
               </div>
             </div>
 
@@ -101,7 +99,7 @@ const Work = ({ t }) => {
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
+                src={Img}
                 alt=""
               />
               {/* pretitle */}
@@ -110,7 +108,9 @@ const Work = ({ t }) => {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white ">{t("activity_c_content")}</span>
+                <span className="text-3xl text-white ">
+                  {t("activity_c_content")}
+                </span>
               </div>
             </div>
           </motion.div>
