@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 import { fadeIn } from "../variants";
-import { t } from "i18next";
 
 // services data
 
@@ -82,10 +81,8 @@ const Services = ({ t }) => {
                       </p>
                     </div>
                     <div className="flex flex-col flex-1 items-end ">
-                      <a
-                        className="btn w-9 h-9 mb-[20px] flex justify-center items-center"
-                        onClick={() => openInNewTab(link)}
-                      >
+                      <a className="btn w-9 h-9 mb-[20px] flex justify-center items-center"
+                        onClick={() => openInNewTab(link)}>
                         <BsArrowUpRight />
                       </a>
                       <a
