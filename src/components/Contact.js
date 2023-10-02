@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { useFormik } from "formik";
+import * as Yup from "yup";
 
 const Contact = ({ t }) => {
   const formik = useFormik({
@@ -12,9 +13,23 @@ const Contact = ({ t }) => {
       title: "先生 Mr.",
       terms: "",
     },
+
+    // Validate form (with Yup)
+    validationSchema: Yup.object({
+      name: Yup.string().required("必填欄位 Required"),
+      email: Yup.string()
+        .email("無效的電子郵件 Invalid email address")
+        .required("必填欄位 Required"),
+      terms: Yup.array().required("必填欄位 Required"),
+    }),
+
+    // Submit form
+    onSubmit: async (values) => {
+      console.log(values);
+    },
   });
 
-  console.log(formik.values);
+  console.log(formik.errors);
 
   // Define environment variables
   const GOOGLE_SHEETS_DOCUMENT_ID =
