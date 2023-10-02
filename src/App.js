@@ -46,7 +46,6 @@ const App = () => {
       <Activity t={t} />
       <Group t={t} />
       <Contact t={t} />
-      <div className='h-[4000px]'></div>
     </div>
   );
 };
