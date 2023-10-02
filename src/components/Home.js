@@ -11,9 +11,9 @@ const Banner = ({ t }) => {
       id="home"
       className="lg:min-h-[90vh] flex items-center">
       <div className="container mx-auto my-auto">
-        <div className="flex flex-col gap-y-6 gap-x-6 lg:flex-row lg:items-center">          
+        <div className="flex flex-col gap-y-6 gap-x-8 lg:flex-row lg:items-center">          
           {/* Column1: text */}
-          <div className="flex-1 w-3/5 font-primary text-center lg:text-left ">
+          <div className="w-3/5 font-primary text-center lg:text-left ">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -39,7 +39,7 @@ const Banner = ({ t }) => {
           </div>
 
           {/* Column2: image */}
-          <div className="flex-1">
+          <div className="w-2/5">
             <img src={Image} alt="" />
           </div>
 
