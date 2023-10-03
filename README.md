@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# 已經 deploy on Github Pages
+
+若有更新，先 commit, push 到 Github，
+
+再執行 `npm run deploy`，等到終端機顯示 `Published` ，再過幾分鐘即可在此 repo 的 Settings >> Pages 查看
+
+live 網址：<https://cckk2913.github.io/ysyichch/>
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
