@@ -128,7 +128,7 @@ const Contact = ({ t }) => {
             {/* checkbox */}
             <div className="">
               <label className="block text-sm pb-2" htmlFor="terms"></label>
-              服務項目 Service
+              同意條款 Terms of Service
               <div className="flex items-center gap-2 pt-2">
                 <input
                   className="h-5 w-5"
