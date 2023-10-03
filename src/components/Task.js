@@ -73,7 +73,7 @@ const Services = ({ t }) => {
                       <h4 className="text-[30px] tracking-wider font-primary font-semibold leading-tight mb-6">
                         {name}
                       </h4>
-                      <p className="text-[22px] font-secondary leading-tight tracking-wider">
+                      <p className="text-[22px] font-t leading-tight tracking-wider">
                         {description}
                       </p>
                     </div>

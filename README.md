@@ -10,6 +10,43 @@
 
 live 網址：<https://cckk2913.github.io/ysyichch/>
 
+## 改字體 & 新增自定義顏色
+
+1. 在google font網站產出連結
+
+2. 把連結寫在index.html最上面
+
+3. 到tailwind.config.js 改fontFamily
+
+```python
+# 第一版 
+  fontFamily: {
+      primary: "Lexend",
+      secondary: "Zilla",
+      tertiary: "Aldrich",
+    },
+# 第二版   
+  fontFamily: {
+      primary: "Outfit",
+      secondary: "Spline Sans",
+      tertiary: "Aldrich",
+    }, 
+# 第三版   
+  都用明體 Noto Serif TC
+
+## 新增自定義的color
+  theme: {
+  ...
+   extend: {
+      colors: {
+        ...
+        mybrown: "#c6653a",
+        mylightbrown: "#E1C9B9",
+      },
+    }
+  }
+```
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
