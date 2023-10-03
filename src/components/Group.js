@@ -34,7 +34,7 @@ const Group = ({ t }) => {
         {/* text row */}
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -49,7 +49,7 @@ const Group = ({ t }) => {
         {/* memberblock row */}
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
           <motion.div
-            variants={fadeIn("left", 0.1)}
+            variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
