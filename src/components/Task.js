@@ -66,7 +66,7 @@ const Services = ({ t }) => {
                 const { name, description, link } = service;
                 return (
                   <div
-                    className="border-b border-white/20 mb-[38px] flex h-fit"
+                    className="border-b border-white/20 mb-[40px] flex h-fit"
                     key={index}
                   >
                     <div className="max-w-[560px] pb-10">
@@ -77,9 +77,9 @@ const Services = ({ t }) => {
                         {description}
                       </p>
                     </div>
-                    <div className="flex flex-col flex-1 items-end ">
+                    <div className="flex flex-col flex-1 justify-center items-end">
                       <button
-                        className="btn-round bg-black w-3rem mb-[20px] flex justify-center items-center"
+                        className="btn-round bg-black mb-4 flex items-center justify-center"
                         onClick={() => openInNewTab(link)}
                       >
                         <BsArrowUpRight />
