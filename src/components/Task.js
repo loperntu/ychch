@@ -79,12 +79,12 @@ const Services = ({ t }) => {
                     </div>
                     <div className="flex flex-col flex-1 justify-center items-end">
                       <button
-                        className="btn-round bg-black mb-4 flex items-center justify-center"
+                        className="btn-round bg-mygreen mb-4 flex items-center justify-center"
                         onClick={() => openInNewTab(link)}
                       >
                         <BsArrowUpRight />
                       </button>
-                      <p className="text-gray-400">Learn more</p>
+                      <p className="text-mygreen">Learn more</p>
                     </div>
                   </div>
                 );

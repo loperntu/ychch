@@ -51,6 +51,8 @@ module.exports = {
         accent: "#B809C3",
         mybrown: "#c6653a",
         mylightbrown: "#E1C9B9",
+        myred: "#8B0000",
+        mygreen: "#80A492",
       },
       backgroundImage: {
         site: "url('./assets/fullwhite.jpg')",

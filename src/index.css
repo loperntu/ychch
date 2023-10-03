@@ -9,7 +9,6 @@
   text-transform: uppercase;
   background-size: auto;
   color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px #eee;
   border-radius: 30px;
   transition: 0.5s;
@@ -92,9 +91,6 @@
   }
   .text-section-title {
     @apply text-[#c6653a] h2;
-  }
-  .text-mild-brown {
-    @apply text-[#E1C9B9];
   }
   .text-brown {
     @apply text-[#c6653a];
