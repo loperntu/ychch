@@ -11,9 +11,9 @@
 
 2. 關掉原本的terminal (`npm start`的那個) 再執行 `npm run deploy`，等到終端機顯示 `Published` ，
 
-3. 再過幾分鐘即可在此 repo 的 Settings >> Pages 查看
+3. 再過幾分鐘即可在此 repo 的 Settings >> Pages 查看（可能要刷新一下頁面）
 
-live 網址：<https://cckk2913.github.io/ysyichch/>
+4. 直接看 live 網址：<https://cckk2913.github.io/ysyichch/>）
 
 ## 我的主題配色
 
