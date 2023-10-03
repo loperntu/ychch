@@ -54,7 +54,7 @@ const Contact = ({ t }) => {
     },
   });
 
-  console.log(formik.errors);
+  //console.log(formik.errors);
 
   return (
     <section id="contact" className="lg:section">
@@ -153,11 +153,7 @@ const Contact = ({ t }) => {
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="btn btn-sm"
-              onSubmit={formik.handleSubmit}
-            >
+            <button type="submit" className="btn btn-sm">
               確認送出 send
             </button>
           </motion.form>
