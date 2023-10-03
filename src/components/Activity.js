@@ -20,7 +20,6 @@ const Activity = ({ t }) => {
             {/* text */}
             <div>
               <h2 className="text-section-title ">{t("recent_activity")}</h2>
-              <p className="max-w-sm mb-16"></p>
               <button className="btn btn-sm">{t("see_more")}</button>
             </div>
             {/* image */}
