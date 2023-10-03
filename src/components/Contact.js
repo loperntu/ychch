@@ -26,16 +26,35 @@ const Contact = ({ t }) => {
     // Submit form
     onSubmit: async (values) => {
       console.log(values);
+
+      // Initialize the Google Spreadsheet instance
+      const doc = new GoogleSpreadsheet(
+        process.env.REACT_APP_GOOGLE_SHEETS_DOCUMENT_ID
+      );
+
+      // Authenticate using the credentials from your JSON file
+      await doc.useServiceAccountAuth({
+        client_email: process.env.REACT_APP_CLIENT_EMAIL,
+        private_key: process.env.REACT_APP_PRIVATE_KEY.replace(/\\n/g, "\n"), // Handle line breaks
+      });
+
+      // Load the Google Spreadsheet
+      await doc.loadInfo();
+
+      // Select the sheet you want to write to (by id)
+      const sheet = doc.sheetsById[process.env.REACT_APP_SHEET_ID];
+
+      // Create a new row with the form data
+      await sheet.addRow({
+        Name: values.name,
+        Email: values.email,
+        Title: values.title,
+        Terms: values.terms === "checked" ? "Yes" : "No",
+      });
     },
   });
 
   console.log(formik.errors);
-
-  // Define environment variables
-  const GOOGLE_SHEETS_DOCUMENT_ID =
-    process.env.REACT_APP_GOOGLE_SHEETS_DOCUMENT_ID;
-  const CLIENT_EMAIL = process.env.REACT_APP_CLIENT_EMAIL;
-  const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
 
   return (
     <section id="contact" className="lg:section">
@@ -134,7 +153,11 @@ const Contact = ({ t }) => {
               </div>
             </div>
 
-            <button type="submit" className="btn btn-sm">
+            <button
+              type="submit"
+              className="btn btn-sm"
+              onSubmit={formik.handleSubmit}
+            >
               確認送出 send
             </button>
           </motion.form>
