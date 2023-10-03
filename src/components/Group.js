@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Group = ({ t }) => {
+  // 成員資料：名字 工作職務 聯絡方式
   const members = [
     {
       name: t("group_member_a_name"),
@@ -29,6 +30,7 @@ const Group = ({ t }) => {
   return (
     <section id="group" className="section ">
       <div className="container mx-auto">
+
         {/* text row */}
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
           <motion.div
@@ -47,7 +49,7 @@ const Group = ({ t }) => {
         {/* memberblock row */}
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("left", 0.1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}

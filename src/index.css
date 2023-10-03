@@ -89,9 +89,6 @@
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#4f0618] to-[#fbc7d4] font-bold font-primary hover:from-[#fbc7d4] hover:to-[#40221c];
   }
-  .text-light-yellow {
-    @apply text-[#f2e7e5];
-  }
   .text-section-title {
     @apply text-[#c6653a] h2;
   }
@@ -100,6 +97,9 @@
   }
   .text-brown {
     @apply text-[#c6653a];
+  }
+  .text-light-yellow {
+    @apply text-[#f2e7e5];
   }
 
   /* Header */

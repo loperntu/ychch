@@ -22,7 +22,7 @@ const Activity = ({ t }) => {
               <h2 className="text-section-title ">{t("recent_activity")}</h2>
               <button className="btn btn-sm">{t("see_more")}</button>
             </div>
-            {/* image */}
+            {/* image 點圖片會打開新視窗*/}
             <div
               className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
               onClick={() => {
@@ -45,10 +45,10 @@ const Activity = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">{t("activity_a_name")}</span>
+                <span className="text-mild-brown">{t("activity_a_name")}</span>
               </div>
               {/* title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-6 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-3xl text-white ">
                   {t("activity_a_content")}
                 </span>
@@ -56,7 +56,7 @@ const Activity = ({ t }) => {
             </div>
           </motion.div>
 
-          {/* Right Columng (2nd and 3rd project)*/}
+          {/* 右邊欄位（第2 第3 個圖片） */}
           <motion.div
             variants={fadeIn("left", 0.2)}
             initial="hidden"
@@ -79,7 +79,7 @@ const Activity = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">{t("activity_b_name")}</span>
+                <span className="text-mild-brown">{t("activity_b_name")}</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
@@ -89,7 +89,7 @@ const Activity = ({ t }) => {
               </div>
             </div>
 
-            {/* 3rd project image */}
+            {/* 3rd image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300">
@@ -103,7 +103,7 @@ const Activity = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">{t("activity_c_name")}</span>
+                <span className="text-mild-brown">{t("activity_c_name")}</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
