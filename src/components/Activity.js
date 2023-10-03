@@ -20,7 +20,7 @@ const Activity = ({ t }) => {
             {/* text */}
             <div>
               <h2 className="text-section-title ">{t("recent_activity")}</h2>
-              <button className="btn btn-sm">{t("see_more")}</button>
+              <button className="btn btn-lg">{t("see_more")}</button>
             </div>
             {/* image 點圖片會打開新視窗*/}
             <div

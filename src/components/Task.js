@@ -9,24 +9,21 @@ const Services = ({ t }) => {
   const services = [
     {
       name: t("core_task_a_name"),
-      description:
-      t("core_task_a_content"),
-      link: "",
+      description: t("core_task_a_content"),
+      link: "https://www.lib.ntu.edu.tw/",
     },
     {
       name: t("core_task_b_name"),
-      description:
-      t("core_task_b_content"),
-      link: "",
+      description: t("core_task_b_content"),
+      link: "https://www.lib.ntu.edu.tw/",
     },
     {
       name: t("core_task_c_name"),
-      description:
-      t("core_task_c_content"),
-      link: "",
+      description: t("core_task_c_content"),
+      link: "https://www.lib.ntu.edu.tw/",
     },
   ];
-  
+
   // onClink and open a new tab with url
   const openInNewTab = (url) => {
     window.open(url, "_blank");
@@ -44,13 +41,13 @@ const Services = ({ t }) => {
             viewport={{ once: false, amount: 0.3 }}
             animate={{ opacity: 1 }}
             className="flex-1 lg:bg-bottom bg-no-repeat mb-12 lg:mb-0 max-w-[455px]"
-          > {/*img classname= "mix-blend-lighten"  */}
+          >
+            {" "}
+            {/*img classname= "mix-blend-lighten"  */}
             <h2 className="text-section-title mb-6 leading-tight">
               {t("core_task")}
             </h2>
-            <button className="btn btn-sm">
-              {t("see_more")}
-            </button>
+            <button className="btn btn-lg">{t("see_more")}</button>
           </motion.div>
 
           {/* services */}
@@ -81,16 +78,13 @@ const Services = ({ t }) => {
                       </p>
                     </div>
                     <div className="flex flex-col flex-1 items-end ">
-                      <a className="btn w-9 h-9 mb-[20px] flex justify-center items-center"
-                        onClick={() => openInNewTab(link)}>
-                        <BsArrowUpRight />
-                      </a>
-                      <a
-                        className="text-sm text-brown"
+                      <button
+                        className="btn-round bg-black w-3rem mb-[20px] flex justify-center items-center"
                         onClick={() => openInNewTab(link)}
                       >
-                        Learn more
-                      </a>
+                        <BsArrowUpRight />
+                      </button>
+                      <p className="text-gray-400">Learn more</p>
                     </div>
                   </div>
                 );

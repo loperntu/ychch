@@ -4,15 +4,14 @@
 
 .btn {
   flex: auto;
-  margin: 10px;
-  padding: 50 0px;
+  padding: 10px 20px 10px 20px;
   text-align: center;
   text-transform: uppercase;
-  background-size: 200% auto;
+  background-size: auto;
   color: white;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px #eee;
-  border-radius: 20px;
+  border-radius: 30px;
   transition: 0.5s;
 }
 .btn:hover {
@@ -79,10 +78,12 @@
     @apply h-[50px] px-6 text-sm bg-mylightbrown;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base bg-mylightbrown;
+    @apply h-[56px] text-base bg-mylightbrown;
   }
-  .btn-link {
-    @apply text-base;
+  .btn-round {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
   }
 
   /* Text */
