@@ -48,7 +48,7 @@
     @apply font-primary text-[50px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-primary font-semibold text-[30px] mb-6 leading-[46px];
+    @apply font-primary font-semibold text-[30px] mb-6 leading-[42px];
   }
   .h4 {
     @apply font-secondary text-[20px] mb-6;
