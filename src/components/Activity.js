@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img from "../assets/tang_wenhuitu_small.png";
+import Img from "../assets/loopy_ya.jpg";
 
 const Activity = ({ t }) => {
   return (
