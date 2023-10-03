@@ -3,20 +3,31 @@
 @tailwind utilities;
 
 .btn {
-  background: linear-gradient(
-    92.23deg,
-    #E1C9B9,
-    #E1C9B9
-  );
+  flex: auto;
+  margin: 10px;
+  padding: 50 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-position: right center; /* change the direction of the gradient here */
+  background-color: mybrown;
+  transition: 0.7s;
 }
 
-.btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #e9a182,
-    #e9a182
-  );
+/* 點擊按鈕後會出現新的框框
+.btn:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #5a01a7;
 }
+*/
 
 .gradient,
 .active {
@@ -31,7 +42,6 @@
 /* The @layer directive helps you control declaration order by automatically relocating your styles to the corresponding @tailwind directive, also enables features like modifiers and tree-shaking for your own custom CSS. */
 
 @layer base {
-  
   body {
     --font: font-secondary;
     --font-size: 16px;
@@ -57,68 +67,68 @@
     @apply py-8 lg:py-24 lg:h-screen lg:w-screen flex items-center;
   }
 
-
   /* Button */
-  .btn:hover {
-    @apply  text-purple-950;
-  }
-  .btn {
-    @apply rounded-full font-primary text-black font-medium;
+
+  .btn-1 {
+    background-image: linear-gradient(
+      to right,
+      #f6d365 0%,
+      #fda085 51%,
+      #f6d365 100%
+    );
   }
   .btn-sm {
-    @apply h-[40px] px-6 text-sm;
+    @apply h-[40px] px-6 text-sm bg-mylightbrown;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply h-[56px] px-10 text-base bg-mylightbrown;
   }
   .btn-link {
     @apply text-base;
   }
 
-
   /* Text */
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#4f0618] to-[#fbc7d4] font-bold font-primary hover:from-[#fbc7d4] hover:to-[#40221c];
   }
-  .text-light-yellow{
+  .text-light-yellow {
     @apply text-[#f2e7e5];
   }
   .text-section-title {
     @apply text-[#c6653a] h2;
   }
-  .text-mild-pink{
+  .text-mild-brown {
     @apply text-[#E1C9B9];
   }
-  .text-brown{
+  .text-brown {
     @apply text-[#c6653a];
   }
 
-
   /* Header */
-  .desktopMenu{
-    @apply flex text-white font-secondary items-stretch space-x-8 my-2; 
+  .desktopMenu {
+    @apply flex text-white font-secondary items-stretch space-x-8 my-2;
   }
-  .desktopMenuListItem{
+  .desktopMenuListItem {
     cursor: pointer;
   }
   /* 碰到的時候會出現底線 */
-  .desktopMenuListItem:hover{
+  .desktopMenuListItem:hover {
     margin: 0 0 0 0;
-    color: #E1C9B9;
-    border-bottom: 3px solid #E1C9B9;
+    color: #e1c9b9;
+    border-bottom: 3px solid #e1c9b9;
   }
 
-  .custom-select{
-  position: relative;
-  display: block;
-  max-width: 60px;
-  min-width: 30px;
-  margin: auto;
-  border: 1px solid #3C1C78;
-  background-color: #ffffff;
-  z-index: 10;
+  .custom-select {
+    position: relative;
+    display: block;
+    max-width: 60px;
+    min-width: 30px;
+    margin: auto;
+    border: 1px solid #3c1c78;
+    background-color: #ffffff;
+    z-index: 10;
   }
-  select{
+  select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -135,32 +145,31 @@
     font-size: 16px;
     color: black;
   }
-  &:after{
+  &:after {
     position: absolute;
     right: 0;
     top: 0;
     width: 50px;
     height: 100%;
     line-height: 38px;
-    content: '\2228';
+    content: "\2228";
     text-align: center;
-    color: #714BB9;
+    color: #714bb9;
     font-size: 24px;
-    border-left: 1px solid #3C1C78;
+    border-left: 1px solid #3c1c78;
     z-index: -1;
-}
-
+  }
 
   /* Member */
-  .memberBlock{
+  .memberBlock {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-   
+
     justify-content: center;
   }
-  .memberBlockItem{
-    background-color: #E1C9B9;
+  .memberBlockItem {
+    background-color: #e1c9b9;
     margin: 1rem;
     padding: 20px;
     border-radius: 10px;
@@ -168,17 +177,14 @@
     border: 1px solid #ffffff;
     height: 300px;
     width: 250px;
-    
   }
-  .memberName{
-    @apply text-[24px] tracking-wider font-semibold font-secondary leading-tight mb-6
+  .memberName {
+    @apply text-[24px] tracking-wider font-semibold font-secondary leading-tight mb-6;
   }
-  .memberDescription{
-    @apply text-[18px] font-secondary leading-tight tracking-wider mb-3
+  .memberDescription {
+    @apply text-[18px] font-secondary leading-tight tracking-wider mb-3;
   }
-  .memberContactInfo{
-    @apply text-[18px] font-secondary leading-tight tracking-wider
+  .memberContactInfo {
+    @apply text-[18px] font-secondary leading-tight tracking-wider;
   }
-    
 }
-

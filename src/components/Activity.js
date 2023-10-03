@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Img from "../assets/tang_wenhuitu_small.png";
 
-const Work = ({ t }) => {
+const Activity = ({ t }) => {
   return (
     <section className="section lg:py-[60vh] lg:my-[40vh]  " id="activity">
       <div className="container mx-auto">
@@ -120,4 +120,4 @@ const Work = ({ t }) => {
   );
 };
 
-export default Work;
+export default Activity;
