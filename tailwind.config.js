@@ -1,7 +1,4 @@
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  /* 
-  改字體步驟：
+/* 改字體步驟：
   1.在google font網站產出連結 2.把連結寫在index.html最上面 3.到這裡改fontFamily
   
   # 第一版 fontFamily: {
@@ -16,6 +13,21 @@ module.exports = {
     },
  # 第三版   都用明體 Noto Serif TC
 */
+/* 新增自定義的color：
+  theme: {
+  ...
+   extend: {
+      colors: {
+        ...
+        mybrown: "#c6653a",
+        mylightbrown: "#E1C9B9",
+      },
+    }
+  }
+*/
+
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
       primary: "Outfit",
