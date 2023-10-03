@@ -12,7 +12,6 @@ const About = ({ t }) => {
     <section ref={ref} id="about" className="section lg:pb-[20vh] lg:mb-20">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
-
           {/* image row */}
           <motion.div
             variants={fadeIn("right", 0.2)}
@@ -20,7 +19,7 @@ const About = ({ t }) => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             animate={{ opacity: 2 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px]  bg-top"
+            className="flex-1 bg-about bg-contain bg-no-repeat h-[440px] bg-top"
           ></motion.div>
 
           {/* text row */}
@@ -33,11 +32,9 @@ const About = ({ t }) => {
             className="flex-1"
           >
             <h2 className="text-section-title">{t("about_us")}</h2>
-            <h3 className="h3">
-            {t("about_us_sub")}
-            </h3>
+            <h3 className="h3">{t("about_us_sub")}</h3>
             <h4 className="h4 tracking-wider">{t("aboout_us_content")}</h4>
-            
+
             {/*  stats  一列有 3 columns */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -66,14 +63,6 @@ const About = ({ t }) => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button
-                className="btn btn-lg"
-                onClick={() => {
-                  window.location.href = "#contact";
-                }}
-              >
-                Contact me
-              </button>
               {/*<a href="#" className="text-gradient btn-link">
                 My Portfolio</a> */}
             </div>
