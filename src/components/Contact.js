@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { submitDataToGoogleSheets } from "./googleSheetsApi";
 
 const Contact = ({ t }) => {
   const formik = useFormik({
@@ -27,30 +28,16 @@ const Contact = ({ t }) => {
     onSubmit: async (values) => {
       console.log(values);
 
-      // 初始化 GoogleSpreadsheet instance
-      const doc = new GoogleSpreadsheet(
-        process.env.REACT_APP_GOOGLE_SHEETS_DOCUMENT_ID
-      );
+      // Call the function to submit data to Google Sheets
+      const submissionResult = await submitDataToGoogleSheets(values);
 
-      // 授權 using credentials from .env
-      await doc.useServiceAccountAuth({
-        client_email: process.env.REACT_APP_CLIENT_EMAIL,
-        private_key: process.env.REACT_APP_PRIVATE_KEY.replace(/\\n/g, "\n"), // Handle line breaks
-      });
-
-      // 讀取 Google Spreadsheet
-      await doc.loadInfo();
-
-      // 選擇要寫入的工作表 Sheet (by id)
-      const sheet = doc.sheetsById[process.env.REACT_APP_SHEET_ID];
-
-      // 用收到的 form data 創建新的 row
-      await sheet.addRow({
-        Name: values.name,
-        Email: values.email,
-        Title: values.title,
-        Terms: values.terms === "checked" ? "Yes" : "No",
-      });
+      if (submissionResult.success) {
+        // Handle successful submission (e.g., show a success message)
+        console.log("Data submitted successfully.");
+      } else {
+        // Handle submission error (e.g., show an error message)
+        console.error("Error submitting data:", submissionResult.message);
+      }
     },
   });
 
