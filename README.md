@@ -5,15 +5,15 @@
 
 已經設定好 scripts （在 `package.json` 裡面可查看）
 
-若 code 有更新，
+若 code 有更新，要重新部署：
 
-1. 先 commit, push 到 Github，
+1. 先 commit, push 到 Github
 
-2. 關掉原本的terminal (`npm start`的那個) 再執行 `npm run deploy`，等到終端機顯示 `Published` ，
+2. 關掉原本的terminal (`npm start`的那個) 再執行 `npm run deploy`，等到終端機顯示 `Published` 
 
 3. 再過幾分鐘即可在此 repo 的 Settings >> Pages 查看（可能要刷新一下頁面）
 
-4. 直接看 live 網址：<https://cckk2913.github.io/ysyichch/>）
+4. 直接看 live 網址：<https://cckk2913.github.io/ysyichch/>
 
 ## 我的主題配色
 
