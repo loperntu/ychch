@@ -45,7 +45,7 @@ const Activity = ({ t }) => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-mild-brown">{t("activity_a_name")}</span>
+                <span className="text-mygreen">{t("activity_a_name")}</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
