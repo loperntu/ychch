@@ -4,7 +4,7 @@
 
 1. 先 commit, push 到 Github，
 
-2. 再執行 `npm run deploy`，等到終端機顯示 `Published` ，
+2. 關掉原本的terminal (`npm start`的那個) 再執行 `npm run deploy`，等到終端機顯示 `Published` ，
 
 3. 再過幾分鐘即可在此 repo 的 Settings >> Pages 查看
 
@@ -46,6 +46,15 @@ live 網址：<https://cckk2913.github.io/ysyichch/>
     }
   }
 ```
+
+## 我的主題配色
+
+傳統的中式風
+
+- 版頭 紅色：#8B0000 `myred`
+- 標題 棕色：#c6653a  `mybrown`
+- 按鈕 土粉：#E1C9B9  `mylightbrown`
+- 菡萏綠色：#80A492  `my green`
 
 ## Getting Started with Create React App
 
