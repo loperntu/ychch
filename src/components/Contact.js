@@ -24,24 +24,24 @@ const Contact = ({ t }) => {
       terms: Yup.array().required("必填欄位 Required"),
     }),
 
-    // Submit form
+    // Submit form (使用"./googleSheetsApi"的function)
     onSubmit: async (values) => {
       console.log(values);
 
-      // Call the function to submit data to Google Sheets
+      // Call function to submit data to Google Sheets
       const submissionResult = await submitDataToGoogleSheets(values);
 
       if (submissionResult.success) {
-        // Handle successful submission (e.g., show a success message)
+        // Handle successful submission
         console.log("Data submitted successfully.");
       } else {
-        // Handle submission error (e.g., show an error message)
+        // Handle submission error
         console.error("Error submitting data:", submissionResult.message);
       }
     },
   });
 
-  //console.log(formik.errors);
+  console.log(formik.errors);
 
   return (
     <section id="contact" className="lg:section">
@@ -116,7 +116,7 @@ const Contact = ({ t }) => {
                 value={formik.values.title}
                 onChange={formik.handleChange}
                 name="title"
-                className="border-10 p-2 rounded-md bg-orange-100 w-fit"
+                className="border-2 p-2 rounded-md bg-mylightbrown w-fit"
               >
                 <option value="Mr.">先生 Mr.</option>
                 <option value="Ms.">小姐 Ms.</option>
@@ -127,7 +127,7 @@ const Contact = ({ t }) => {
 
             {/* checkbox */}
             <div className="">
-              <label className="block text-sm pb-2" htmlFor="terms">
+              <label className="block text-sm pb-2 pt-5" htmlFor="terms">
               同意條款 Terms of Service
               </label>
               
