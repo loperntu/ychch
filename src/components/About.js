@@ -38,7 +38,7 @@ const About = ({ t }) => {
             {/*  stats  一列有 3 columns */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient my-2 pt-2">
+                <div className="text-[40px] font-tertiary text-mygreen my-2 pt-2">
                   {inView ? <CountUp start={0} end={12} duration={3} /> : null}
                 </div>
                 <div className="font-secondary text-sm tracking-[2px]">
@@ -46,7 +46,7 @@ const About = ({ t }) => {
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient my-2 pt-2">
+                <div className="text-[40px] font-tertiary text-mygreen my-2 pt-2">
                   {inView ? <CountUp start={0} end={9} duration={3} /> : null}
                 </div>
                 <div className="font-secondary text-sm tracking-[2px]">
@@ -54,7 +54,7 @@ const About = ({ t }) => {
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient my-2 pt-2">
+                <div className="text-[40px] font-tertiary text-mygreen my-2 pt-2">
                   {inView ? <CountUp start={0} end={6} duration={3} /> : null}
                 </div>
                 <div className="font-secondary text-sm tracking-[2px]">
