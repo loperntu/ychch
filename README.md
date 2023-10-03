@@ -1,8 +1,12 @@
-# 已經 deploy on Github Pages
+## Deploy on Github Pages
 
-若有更新，先 commit, push 到 Github，
+若 code 有更新，
 
-再執行 `npm run deploy`，等到終端機顯示 `Published` ，再過幾分鐘即可在此 repo 的 Settings >> Pages 查看
+1. 先 commit, push 到 Github，
+
+2. 再執行 `npm run deploy`，等到終端機顯示 `Published` ，
+
+3. 再過幾分鐘即可在此 repo 的 Settings >> Pages 查看
 
 live 網址：<https://cckk2913.github.io/ysyichch/>
 
