@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/tang_wenhuitu_small.png";
+import Image from "../assets/yu.jpeg";
 // motion
 import { motion } from "framer-motion";
 // variants
@@ -34,12 +34,12 @@ const Banner = ({ t }) => {
               animate={{ opacity: 1 }}
               className="lg:text-[28px] max-w-lg lg:mx-0 "
             >
-              Ying-shih Yü International Center for History and the Chinese Humanities at NTU
+              Ying-shih Yü International Center for History and the Chinese Humanities at National Taiwan University
             </motion.p>
           </div>
 
           {/* Column2: image */}
-          <div className="w-2/5">
+          <div className="w-3/5">
             <img src={Image} alt="" />
           </div>
 

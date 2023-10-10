@@ -8,22 +8,22 @@ const Group = ({ t }) => {
     {
       name: t("group_member_a_name"),
       description: t("group_member_a_description"),
-      contactinfo: "abc123@gmail.com",
+      contactinfo: "ychch@gmail.com",
     },
     {
       name: t("group_member_b_name"),
       description: t("group_member_b_description"),
-      contactinfo: "abc123@gmail.com",
+      contactinfo: "ychch@gmail.com",
     },
     {
       name: t("group_member_c_name"),
       description: t("group_member_c_description"),
-      contactinfo: "abc123@gmail.com",
+      contactinfo: "ychch@gmail.com",
     },
     {
       name: t("group_member_d_name"),
       description: t("group_member_d_description"),
-      contactinfo: "abc123@gmail.com",
+      contactinfo: "ychch@gmail.com",
     },
   ];
 
