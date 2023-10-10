@@ -22,7 +22,7 @@ const Banner = ({ t }) => {
               animate={{ opacity: 1 }}
               className="lg:text-[50px] font-bold"
             >
-              余英時國際漢學研究中心
+              國立台灣大學余英時國際漢學研究中心
             </motion.h1>
 
             {/* 一句介紹 */}
@@ -34,7 +34,7 @@ const Banner = ({ t }) => {
               animate={{ opacity: 1 }}
               className="lg:text-[28px] max-w-lg lg:mx-0 "
             >
-              Ying-shih Yü International Center for History and the Chinese Humanities
+              Ying-shih Yü International Center for History and the Chinese Humanities at NTU
             </motion.p>
           </div>
 
