@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ysyichch/static/css/main.93e86e48.css",
+    "main.js": "/ysyichch/static/js/main.a4b0e4a5.js",
+    "static/media/tang_wenhuitu_small.png": "/ysyichch/static/media/tang_wenhuitu_small.7bc021387e755601be1a.png",
+    "static/media/yu.jpeg": "/ysyichch/static/media/yu.80957f8d14a9c04ea7e5.jpeg",
+    "static/media/calligraphy.png": "/ysyichch/static/media/calligraphy.f6210409ab05bf7e9157.png",
+    "static/media/logo.svg": "/ysyichch/static/media/logo.1ed738f9eb92c6c36939bc033726e44c.svg",
+    "index.html": "/ysyichch/index.html",
+    "main.93e86e48.css.map": "/ysyichch/static/css/main.93e86e48.css.map",
+    "main.a4b0e4a5.js.map": "/ysyichch/static/js/main.a4b0e4a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e86e48.css",
+    "static/js/main.a4b0e4a5.js"
+  ]
+}
