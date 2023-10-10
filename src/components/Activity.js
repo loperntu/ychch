@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img from "../assets/loopy_ya.jpg";
+import Img from "../assets/calligraphy.png";
 
 const Activity = ({ t }) => {
   return (

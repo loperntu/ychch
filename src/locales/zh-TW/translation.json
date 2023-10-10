@@ -21,12 +21,12 @@
   "activity_c_name":"講座C",
   "activity_c_content":"講座C內容",
   "group_framework_sub":"本中心之諮詢委員會，委員 7-11 人，由本校與中研院共同推薦關注研究漢學及相關人文學領域，辦理余先生學術思想相關活動",
-  "group_member_a_name":"陳弱水", 
-  "group_member_a_description":"一些工作職務",
-  "group_member_b_name":"一二三",
-  "group_member_b_description":"一些工作職務",
-  "group_member_c_name":"一二三",
-  "group_member_c_description":"一些工作職務",
-  "group_member_d_name":"一二三",
-  "group_member_d_description":"一些工作職務"
+  "group_member_a_name":"陳弱水教授", 
+  "group_member_a_description":"主任，綜理中心業務，負責中心之規劃、推動、執行及績效評估等事項。",
+  "group_member_b_name":"謝舒凱教授",
+  "group_member_b_description":"副主任，襄助主任處理中心業務。",
+  "group_member_c_name":"傅揚助理教授",
+  "group_member_c_description":"執行秘書，負責中心日常行政業務執行。",
+  "group_member_d_name":"行政助理",
+  "group_member_d_description":"行政助理，協助中心日常行政業務執行。"
 }
